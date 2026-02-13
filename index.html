@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ForestGuard AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" 
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+<nav>
+    <h2>🌳 ForestGuard AI</h2>
+    <div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html">Report</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Smart Deforestation Prevention System</h1>
+    <p>Real-time forest monitoring and AI-based risk prediction.</p>
+</section>
+
+<h2 style="text-align:center;">Live Forest Monitoring</h2>
+
+<div id="map"></div>
+
+<!-- Leaflet JS (MUST be before script.js) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Your JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

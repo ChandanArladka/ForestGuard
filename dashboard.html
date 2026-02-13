@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ForestGuard Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<nav>
+    <h2>🌳 ForestGuard AI</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="report.html">Report</a>
+    </div>
+</nav>
+
+<h1 style="text-align:center;">Sustainability Dashboard</h1>
+
+<div class="stats">
+    <div class="card">
+        <h3>Trees Saved</h3>
+        <p id="trees">1200</p>
+    </div>
+
+    <div class="card">
+        <h3>CO₂ Reduced (tons)</h3>
+        <p>350</p>
+    </div>
+
+    <div class="card">
+        <h3>Forest Coverage</h3>
+        <p>78%</p>
+    </div>
+</div>
+
+<canvas id="riskChart"></canvas>
+
+<script>
+const ctx = document.getElementById('riskChart');
+
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun'],
+        datasets: [{
+            label: 'Deforestation Risk %',
+            data: [20, 35, 30, 50, 45, 25],
+            borderColor: 'red',
+            fill: false
+        }]
+    }
+});
+</script>
+
+</body>
+</html>
